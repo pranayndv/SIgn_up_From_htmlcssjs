@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  opacity: 0.8;
+  background-color: #ffced1;
+  display: flex;
+}
+
+section {
+  float: right;
+  margin: 0 5vw 0 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 40vw;
+}
+
+.form {
+  padding: 10px 20px;
+  width: 35vw;
+  height: 535px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid rgb(219, 215, 215);
+}
+.form div {
+  width: inherit;
+  margin: 7px 0;
+  position: relative;
+}
+
+.coolinput {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: static;
+}
+
+.coolinput label.text {
+  font-size: 0.75rem;
+  color: #1c1f38;
+  font-weight: 700;
+  position: relative;
+  top: 0.5rem;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: white;
+  width: fit-content;
+}
+
+.coolinput input {
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  border: 2px #b8b8b8 solid;
+  border-radius: 5px;
+  background: white;
+}
+
+.coolinput input:focus {
+  outline: none;
+  border: 2px solid #020101;
+}
+
+.coolinput svg {
+  width: 20px;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  cursor: pointer;
+}
+.eye {
+  margin-right: 10px;
+}
+
+button {
+  margin: 10px 0;
+  width: 90%;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.2rem;
+  background-color: black;
+  border-radius: 40px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+button:hover {
+  scale: 1.01;
+  transition: all 300ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid #ffced1;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+}
+.terms a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.options {
+  width: inherit;
+  margin-top: 10px;
+}
+.options div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+}
+.options div svg {
+  width: 25px;
+  margin-right: 10px;
+}
+.options div a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+@media only screen and (max-width: 1012px) {
+  .left {
+    display: none;
+  }
+  section {
+    margin: auto;
+  }
+  .form {
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section {
+    width: 80vw;
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .form {
+    width: 85vw;
+    height: 720px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  .coolinput input {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+  .eye {
+    margin-right: 0;
+  }
+  .options {
+   margin-bottom: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .form div {
+    margin: 5px 0;
+  }
+  .form .coolinput input {
+    margin:0;
+  }
+  .form {
+    height: 540px;
+    margin: 0;
+  }
+  section {
+    margin:0;
+    height: 80vh;
+  }
+  
+}
+

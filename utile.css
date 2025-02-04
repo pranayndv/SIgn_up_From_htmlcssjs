@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300..700&display");
+
+.font-change {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: #75352c;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+h4 {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+h4 div{
+  height: 1px;
+  width: 250px;
+  background-color: gray;
+  margin: 0 10px;
+}
+
+.text-orr{
+  color: #903f31;
+  text-decoration: none;
+}
+.text-gray{
+  color: gray;
+  font-size: .90rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mx-10 {
+  margin: 0 10px 0 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  .mx-10 {
+    margin: 0;
+  }
+  h4 div{
+    height: 1px;
+    width: 100px;
+    background-color: gray;
+    margin: 0 10px;
+  }
+}

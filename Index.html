@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utile.css">
+
+    
+    <title>Task 1 - SignUp page</title>
+    <meta description="Date: 31 Jan 2025">
+</head>
+
+<body>
+    
+    <section class="left">
+        <spline-viewer url="https://prod.spline.design/z2SwS6XI89BaHHF8/scene.splinecode"></spline-viewer>
+    </section>
+
+    <section class="right font-change" >
+        <form  class="form" >
+            <h1>Register</h1>
+            
+            <div class="flex">
+                <div class="coolinput ">
+                    <label for="input" class="text" >First Name</label>
+                    <input type="text" placeholder="First Name" name="Fname" class="mx-10" id="Fname" required>
+                </div>
+    
+                <div class="coolinput ">
+                    <label for="lastName" class="text">Last Name</label>
+                    <input type="text" name="Lname" placeholder="Last Name"  id="Lname" >
+                </div>
+            </div>
+
+            <div class="coolinput">
+                <label for="email" class="text">Email</label>
+                <input type="email" name="email" placeholder="e.g. abc@email.com" required  id="email" >
+            </div>
+
+            <div class="coolinput">
+                <label for="mobile" class="text">Mobile no.</label>
+                <input type="text" name="mobile" placeholder="XXXXXXXXXXX" required  id="mobile">
+            </div>
+
+            <div class="flex">
+            <div class="coolinput">
+                <label for="password" class="text">Password</label>
+                <input type="password" name="password" placeholder="Password" class="mx-10"  id="password" required>
+                <svg  viewBox="0 0 24 24" fill="none" class="eye showPass" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 2L22 22" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6.71277 6.7226C3.66479 8.79527 2 12 2 12C2 12 5.63636 19 12 19C14.0503 19 15.8174 18.2734 17.2711 17.2884M11 5.05822C11.3254 5.02013 11.6588 5 12 5C18.3636 5 22 12 22 12C22 12 21.3082 13.3317 20 14.8335" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 14.2362C13.4692 14.7112 12.7684 15.0001 12 15.0001C10.3431 15.0001 9 13.657 9 12.0001C9 11.1764 9.33193 10.4303 9.86932 9.88818" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </div>
+
+            <div class="coolinput">
+                <label for="confirmPassword"  class="text" >Confirm Password</label>
+                <input type="password" name="Cpassword" placeholder="Confirm Password"  id="Cpassword" required>
+                <svg viewBox="0 0 24 24" class=" cShowPass" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 2L22 22" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6.71277 6.7226C3.66479 8.79527 2 12 2 12C2 12 5.63636 19 12 19C14.0503 19 15.8174 18.2734 17.2711 17.2884M11 5.05822C11.3254 5.02013 11.6588 5 12 5C18.3636 5 22 12 22 12C22 12 21.3082 13.3317 20 14.8335" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 14.2362C13.4692 14.7112 12.7684 15.0001 12 15.0001C10.3431 15.0001 9 13.657 9 12.0001C9 11.1764 9.33193 10.4303 9.86932 9.88818" stroke="#bababa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </div>
+        </div>
+           <span id="message"></span>
+              <div class="terms">
+
+                  <input type="checkbox" name="t&c" id="" required>
+                  <a href="">I accept the <span class="text-orr">Terms of Use</span> & <span class="text-orr">Privacy Policy</span></a>
+              </div>
+
+            <button type="submit"id="formData">Sign up</button>
+        </form>
+
+    </section>
+    
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
